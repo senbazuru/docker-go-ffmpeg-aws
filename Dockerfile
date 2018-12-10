@@ -6,8 +6,8 @@ RUN yum -y update && yum clean all
 RUN yum -y install epel-release
 
 # install golang
-RUN curl "https://storage.googleapis.com/golang/go1.8.1.linux-amd64.tar.gz" > "/opt/go1.8.1.linux-amd64.tar.gz"
-RUN tar -C /usr/local -xzf /opt/go1.8.1.linux-amd64.tar.gz
+RUN curl "https://storage.googleapis.com/golang/go1.11.2.linux-amd64.tar.gz" > "/opt/go1.11.2.linux-amd64.tar.gz"
+RUN tar -C /usr/local -xzf /opt/go1.11.2.linux-amd64.tar.gz
 
 # set PATH
 RUN echo "export GOPATH=/go" > /etc/profile.d/gopath.sh
