@@ -2,7 +2,7 @@ name: 'build image and push to ghcr.io'
 
 on:
   push:
-    branches: [ "main" ]
+    branches: [ "main", "feature/deploy-to-ghcr" ]
 
 jobs:
   build:
